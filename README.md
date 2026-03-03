@@ -13,7 +13,6 @@ Accepted input format: NIfTI (.nii / .nii.gz)
 python AcetabularMaskCleanup.py <input_image> <out_dir>
 ```
 
-## Outputs
 The script writes the following files to <out_dir>:
 - hip_left.nii.gz — TotalSegmentator output (label map; value = 77)
 - hip_right.nii.gz — TotalSegmentator output (label map; value = 78)
