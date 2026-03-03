@@ -9,6 +9,7 @@ This repository performs hip bone segmentation from input CT images using [Total
 
 ## Usage
 Accepted input format: NIfTI (.nii / .nii.gz)
+```bash
 python AcetabularMaskCleanup.py <input_image> <out_dir>
 
 ## Outputs
