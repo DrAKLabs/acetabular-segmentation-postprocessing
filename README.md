@@ -19,7 +19,7 @@ The workflow requires the following dependencies:
 - `totalsegmentator`
 - `torch` 
 
-If you have an NVIDIA GPU, you can use the provided conda environment file:
+For users with an NVIDIA GPU and a compatible CUDA setup (PyTorch cu121), the provided conda environment file can be used:
 
 ```bash
 conda env create -f totalsegmentatorenv.yml
@@ -27,15 +27,14 @@ conda activate ts-acetabular-postproc
 ```
 
 ## Usage
+Accepted input format: NIfTI (.nii / .nii.gz)
 
 ```bash
 python AcetabularMaskCleanup.py <input_image> <out_dir>
 ```
 
-Accepted input format: NIfTI (.nii / .nii.gz)
-
 The script writes the following files to <out_dir>:
-- hip_left.nii.gz — TotalSegmentator output (label map; value = 77)
-- hip_right.nii.gz — TotalSegmentator output (label map; value = 78)
+- hip_left.nii.gz — TotalSegmentator output (single-label mask; value = 77)
+- hip_right.nii.gz — TotalSegmentator output (single-label mask; value = 78)
 - hip_left_cleaned.nii.gz — refined hip mask (binary)
 - hip_right_cleaned.nii.gz — refined hip mask (binary)
