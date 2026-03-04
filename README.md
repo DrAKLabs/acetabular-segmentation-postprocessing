@@ -8,7 +8,18 @@ This repository performs hip bone segmentation from input CT images using [Total
 - `totalsegmentatorenv.yml`: conda environment specification.
 
 ## Setup
-Create and activate the conda environment:
+The workflow requires the following dependencies:
+- Python 3.9+
+- `numpy`
+- `nibabel`
+- `SimpleITK`
+- `opencv-python`
+- `scikit-image` 
+- `scipy` 
+- `totalsegmentator`
+- `torch` 
+
+If you have an NVIDIA GPU, you can use the provided conda environment file:
 
 ```bash
 conda env create -f totalsegmentatorenv.yml
@@ -16,10 +27,12 @@ conda activate ts-acetabular-postproc
 ```
 
 ## Usage
-Accepted input format: NIfTI (.nii / .nii.gz)
+
 ```bash
 python AcetabularMaskCleanup.py <input_image> <out_dir>
 ```
+
+Accepted input format: NIfTI (.nii / .nii.gz)
 
 The script writes the following files to <out_dir>:
 - hip_left.nii.gz — TotalSegmentator output (label map; value = 77)
