@@ -12,7 +12,7 @@ Create and activate the conda environment:
 
 ```bash
 conda env create -f totalsegmentatorenv.yml
-conda activate totalsegmentatorworkflow
+conda activate ts-acetabular-postproc
 ```
 
 ## Usage
