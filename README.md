@@ -7,6 +7,14 @@ This repository performs hip bone segmentation from input CT images using [Total
 - `AcetabularMaskCleanup_Batch.ipynb`: notebook used in the validation study (link to come) of this post-processing algorithm in the [TotalSegmentator small subset](https://zenodo.org/records/10047263) against [corrected ground truth](https://zenodo.org/records/18853791).
 - `totalsegmentatorenv.yml`: conda environment specification.
 
+## Setup
+Create and activate the conda environment:
+
+```bash
+conda env create -f totalsegmentatorenv.yml
+conda activate totalsegmentatorworkflow
+```
+
 ## Usage
 Accepted input format: NIfTI (.nii / .nii.gz)
 ```bash
