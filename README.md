@@ -1,5 +1,5 @@
 # Acetabular Segmentation Post-Processing
-This repository performs hip bone segmentation from input CT images using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator?tab=readme-ov-file), followed by refinement of the hip bone mask within the acetabulum.
+This repository presents an automated pipeline that performs hip bone segmentation from input CT images using [TotalSegmentator](https://github.com/wasserth/TotalSegmentator?tab=readme-ov-file), followed by refinement of the hip bone mask within the acetabulum.
 
 ## Repository contents
 - `AcetabularMaskCleanup.py`: command-line script to run the full pipeline.
